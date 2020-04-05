@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { UsuarioModel } from 'src/app/models/usuario.model';
+import { UsuarioModel } from '../../models/usuario.model';
 import { Store } from '@ngrx/store';
-import { AppState } from 'src/app/store/app.reducer';
-import { CargarUsuarios } from 'src/app/store/actions';
+import { AppState } from '../../store/app.reducer';
+import { CargarUsuarios } from '../../store/actions';
 import { Subscription } from 'rxjs';
 
 @Component({

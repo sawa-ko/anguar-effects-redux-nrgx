@@ -1,4 +1,4 @@
-import { UsuarioModel } from 'src/app/models/usuario.model';
+import { UsuarioModel } from '../../models/usuario.model';
 import * as fromUsuariosActions from '../actions';
 
 export interface usuariosState {

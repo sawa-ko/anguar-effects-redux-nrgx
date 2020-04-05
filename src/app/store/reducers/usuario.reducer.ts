@@ -1,4 +1,4 @@
-import { UsuarioModel } from 'src/app/models/usuario.model';
+import { UsuarioModel } from '../../models/usuario.model';
 import * as fromUsuarioActions from '../actions';
 
 export interface usuarioState {
@@ -32,7 +32,7 @@ export function UsuarioReducer(
         loading: false,
         loaded: true,
         error: null,
-        users: { ...action.payload },
+        user: { ...action.payload },
       };
     case fromUsuarioActions.CARGAR_USUARIO_FAIL:
       return {

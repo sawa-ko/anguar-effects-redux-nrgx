@@ -15,4 +15,10 @@ export class UsuarioService {
       .get(`${this.url}/users?per_page=10&delay=5`)
       .pipe(map((response) => response['data']));
   }
+
+  public getUser(id: string) {
+    return this.http
+      .get(`${this.url}/user/${id}`)
+      .pipe(map((response) => response['data']));
+  }
 }
