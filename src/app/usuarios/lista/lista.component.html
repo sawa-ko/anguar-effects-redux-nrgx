@@ -1,4 +1,22 @@
-<div class="card-columns">
+<div class="row" *ngIf="loading">
+  <div class="col">
+    <div class="alert alert-info text-center">
+      <h1>
+        Por favor, espera...
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="row" *ngIf="isError">
+  <div class="col">
+    <div class="alert alert-danger text-center">
+      <h1>
+        Se ha producido un error
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="card-columns" *ngIf="loaded">
   <div class="card" *ngFor="let usuario of usuarios">
     <img
       [src]="usuario.avatar"
