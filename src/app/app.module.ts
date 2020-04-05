@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
@@ -20,6 +21,7 @@ import { UsuariosModule } from './usuarios/usuarios.module';
     }),
     SharedModule,
     UsuariosModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
